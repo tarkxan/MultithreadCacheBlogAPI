@@ -9,14 +9,14 @@
     The source API can only filter one tag at a time - notice that the field “tag” is singular and not plural.
     It will return a JSON object with an array of blog posts.
 
-![Array of blog posts](images\PostByTag.PNG)
+![Array of blog posts](images/PostByTag.PNG)
 
     API has the following routes:
     - /api/ping
-![Ping Route](images\PingRoute.PNG)
+![Ping Route](images/PingRoute.PNG)
 
     - /api/posts
-![Posts Route](images\PostsRoute.PNG)
+![Posts Route](images/PostsRoute.PNG)
 
     Successful Response:
     The response of the API will be a list of all the blog posts that have at least one tag
@@ -29,7 +29,7 @@
 
     Examples:
 
-![Responses](images\Responses.PNG)
+![Responses](images/Responses.PNG)
 
 
     Implementation:
