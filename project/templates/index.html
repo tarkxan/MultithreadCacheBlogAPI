@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backend Assessment - Blog Posts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <h2>Welcome to Django API for Backend Assessment - Blog Posts</h2>
+    <br>
+    <h3>Below is the mapping table between Hatchways Solution URLs with Django URLs:</h3>
+    <br>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Request</th>
+          <th scope="col">Hatchways URL Solution</th>
+          <th scope="col">Django URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+            <td>ping</td>
+            <td>api/ping</td>
+            <td>
+              <a href="http://127.0.0.1:8000/api/ping/">
+                http://127.0.0.1:8000/api/ping/</a>
+            </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+            <td>One tag: tech</td>
+            <td>
+              <a href="https://hatchways.io/api/assessment/solution/posts?tags=tech">
+                https://hatchways.io/api/assessment/solution/posts?tags=tech</a>
+            </td>
+            <td>
+              <a href="http://127.0.0.1:8000/api/posts/tags=tech">
+                http://127.0.0.1:8000/api/posts/tags=tech</a>
+            </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+            <td>Two tags: tech,history</td>
+            <td>
+              <a href="https://hatchways.io/api/assessment/solution/posts?tags=tech,history">
+              https://hatchways.io/api/assessment/solution/posts?tags=tech,history</a>
+            </td>
+            <td>
+              <a href="http://127.0.0.1:8000/api/posts/tags=tech,history">
+                http://127.0.0.1:8000/api/posts/tags=tech,history</a>
+            </td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+            <td>One tag, sorted by likes with default direction (asc)</td>
+            <td>
+              <a href="https://hatchways.io/api/assessment/solution/posts?tags=tech&sortBy=likes">
+                https://hatchways.io/api/assessment/solution/posts?tags=tech&sortBy=likes</a>
+            </td>
+            <td>
+              <a href="http://127.0.0.1:8000/api/posts/tags=tech/sortBy=likes">
+              http://127.0.0.1:8000/api/posts/tags=tech/sortBy=likes</a>
+            </td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+            <td>Two tags, sorted by likes with default direction (ASC)</td>
+            <td>
+              <a href="https://hatchways.io/api/assessment/solution/posts?tags=tech,science&sortBy=likes">
+                https://hatchways.io/api/assessment/solution/posts?tags=tech,science&sortBy=likes</a>
+            </td>
+            <td>
+              <a href="http://127.0.0.1:8000/api/posts/tags=tech,science/sortBy=likes">
+                http://127.0.0.1:8000/api/posts/tags=tech,science/sortBy=likes</a>
+            </td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+            <td>One tag, sorted by reads in ASC direction</td>
+            <td>
+              <a href="https://hatchways.io/api/assessment/solution/posts?tags=tech&sortBy=reads&direction=asc">
+                https://hatchways.io/api/assessment/solution/posts?tags=tech&sortBy=reads&direction=asc</a>
+            </td>
+            <td>
+              <a href="http://127.0.0.1:8000/api/posts/tags=tech/sortBy=reads/sortDirection=asc">
+                http://127.0.0.1:8000/api/posts/tags=tech/sortBy=reads/sortDirection=asc</a>
+            </td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+            <td>Two tag, sorted by reads in ASC direction</td>
+            <td>
+              <a href="https://hatchways.io/api/assessment/solution/posts?tags=tech,culture&sortBy=reads&direction=asc">
+                https://hatchways.io/api/assessment/solution/posts?tags=tech,culture&sortBy=reads&direction=asc</a>
+            </td>
+            <td>
+              <a href="http://127.0.0.1:8000/api/posts/tags=tech,culture/sortBy=reads/sortDirection=asc">
+                http://127.0.0.1:8000/api/posts/tags=tech,culture/sortBy=reads/sortDirection=asc</a>
+            </td>
+        </tr>
+      <tr>
+          <th scope="row">8</th>
+            <td>Two tag, sorted by popularity in DESC direction</td>
+            <td>
+              <a href="https://hatchways.io/api/assessment/solution/posts?tags=tech,culture&sortBy=popularity&direction=desc">
+                https://hatchways.io/api/assessment/solution/posts?tags=tech,culture&sortBy=popularity&direction=desc</a>
+            </td>
+            <td>
+              <a href="http://127.0.0.1:8000/api/posts/tags=tech,culture/sortBy=popularity/sortDirection=desc">
+                http://127.0.0.1:8000/api/posts/tags=tech,culture/sortBy=popularity/sortDirection=desc</a>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+</body>
+</html>
